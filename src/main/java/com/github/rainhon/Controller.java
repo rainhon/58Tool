@@ -66,14 +66,14 @@ public class Controller {
         tableColumnPhone.setCellValueFactory(new PropertyValueFactory<>("phone"));
         tableColumnStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
 
-        accountTableColumnPhone.setCellValueFactory(new PropertyValueFactory<>("phone"));
-        accountTableColumnAccount.setCellValueFactory(new PropertyValueFactory<>("account"));
-        accountTableColumnPassword.setCellValueFactory(new PropertyValueFactory<>("password"));
-        accountTableColumnCookies.setCellValueFactory(new PropertyValueFactory<>("cookiesString"));
+//        accountTableColumnPhone.setCellValueFactory(new PropertyValueFactory<>("phone"));
+//        accountTableColumnAccount.setCellValueFactory(new PropertyValueFactory<>("account"));
+//        accountTableColumnPassword.setCellValueFactory(new PropertyValueFactory<>("password"));
+//        accountTableColumnCookies.setCellValueFactory(new PropertyValueFactory<>("cookiesString"));
 
         PipedOutputStream pipedOutputStream = new PipedOutputStream();
 
-        accountTableSelectionModel = accountTableView.getSelectionModel();
+//        accountTableSelectionModel = accountTableView.getSelectionModel();
 
         try{
             pipedInputStream = new PipedInputStream(pipedOutputStream);
