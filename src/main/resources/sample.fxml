@@ -51,7 +51,7 @@
                               <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                  <children>
                                   <Button fx:id="registerBtn" layoutX="24.0" layoutY="55.0" mnemonicParsing="false" onAction="#doRegister" prefHeight="23.0" prefWidth="101.0" text="注册" />
-                                    <TextField fx:id="registerTryTimes" layoutX="139.0" layoutY="55.0" prefHeight="23.0" prefWidth="68.0" promptText="注册次数" text="10" />
+                                    <TextField fx:id="registerTryTimes" layoutX="139.0" layoutY="55.0" prefHeight="23.0" prefWidth="68.0" promptText="注册次数" text="1" />
                                     <Label layoutX="215.0" layoutY="59.0" text="次" />
                                     <Button fx:id="stopRegisterBtn" disable="true" layoutX="24.0" layoutY="150.0" mnemonicParsing="false" onAction="#stopRegister" text="停止注册" visible="false" />
                                     <Label layoutX="27.0" layoutY="119.0" text="取号多少次后重连" />
@@ -62,8 +62,8 @@
                               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                                  <children>
                                     <Label layoutX="14.0" layoutY="26.0" text="代理API" />
-                                    <TextField fx:id="proxyAPI" layoutX="14.0" layoutY="65.0" text="http://webapi.http.zhimacangku.com/getip?num=20&amp;type=2&amp;pro=&amp;city=0&amp;yys=0&amp;port=11&amp;time=1&amp;ts=1&amp;ys=0&amp;cs=0&amp;lb=1&amp;sb=0&amp;pb=4&amp;mr=1&amp;regions=" />
-                                    <CheckBox fx:id="checkBoxUseProxy" layoutX="14.0" layoutY="109.0" mnemonicParsing="false" selected="true" text="启用自动代理" />
+                                    <TextField fx:id="proxyAPI" layoutX="14.0" layoutY="65.0" />
+                                    <CheckBox fx:id="checkBoxUseProxy" layoutX="14.0" layoutY="109.0" mnemonicParsing="false" text="启用自动代理" />
                                  </children>
                               </AnchorPane>
                               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -84,8 +84,8 @@
                                     <Label layoutY="14.0" text="短信平台账号登录" />
                                     <Label layoutX="14.0" layoutY="46.0" text="账号" />
                                     <Label layoutX="14.0" layoutY="76.0" text="密码" />
-                                    <TextField fx:id="messageAPIAccount" layoutX="62.0" layoutY="42.0" text="shui1230" />
-                                    <TextField fx:id="messageAPIPassword" layoutX="62.0" layoutY="72.0" text="cz2183568" />
+                                    <TextField fx:id="messageAPIAccount" layoutX="62.0" layoutY="42.0" />
+                                    <TextField fx:id="messageAPIPassword" layoutX="62.0" layoutY="72.0" />
                                     <Button fx:id="loginMessageAPIBtn" layoutX="164.0" layoutY="151.0" mnemonicParsing="false" onAction="#loginMessageAPI" text="登录" />
                                     <Label layoutX="15.0" layoutY="155.0" text="状态" />
                                     <Label fx:id="messageAPIStatus" layoutX="62.0" layoutY="155.0" text="未登录" />
