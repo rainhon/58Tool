@@ -22,6 +22,7 @@ public class IPManager {
 
     public void reconnect() throws Exception{
         ADSL.cutAdsl(title);
+        Thread.sleep(1000);
         ADSL.connAdsl(title, name ,password);
         String newIP = getIP();
         if(newIP.equals(currentIP)){

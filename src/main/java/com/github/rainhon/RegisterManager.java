@@ -180,8 +180,8 @@ public class RegisterManager {
                 }
                 System.out.println("拉黑号码");
                 System.out.println("号码状态"+phoneRecord.getPhoneStatus().getDescription());
+                freshPage();
             }
-            freshPage();
         }while(tryTimes<30 && phoneRecord.getPhoneStatus() != PhoneRecord.PhoneStatus.USEFUL);
     }
 
